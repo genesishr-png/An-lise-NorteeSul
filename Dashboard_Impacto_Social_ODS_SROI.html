@@ -3498,6 +3498,47 @@
     .persistence-explain { grid-template-columns: 1fr; }
   }
 
+  /* ── RODAPÉ DA AMOSTRA (P5 · teal) ───────────────── */
+  .sample-footer-teal {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    margin-top: 14px;
+    background: linear-gradient(135deg, rgba(13,148,136,0.06) 0%, #fff 70%);
+    border: 1px solid rgba(13,148,136,0.18);
+    border-left: 3px solid #0d9488;
+    border-radius: 10px;
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+  .sample-footer-teal .sft-icon {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    background: #0d9488;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .sample-footer-teal strong { color: var(--ink); font-weight: 700; }
+  .sample-footer-teal .sft-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: rgba(13,148,136,0.12);
+    color: #0d9488;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-left: 6px;
+  }
+
   /* ── RODAPÉ DA AMOSTRA (P4) ──────────────────────── */
   .sample-footer {
     display: flex;
@@ -6419,9 +6460,9 @@
         <div class="sub">Folha Sintética 04/2026 · 7 municípios · 2.693 postos sustentados (Manifestação TCE/RO)</div>
       </div>
       <div class="kpi">
-        <div class="label">Amostra desta consulta</div>
-        <div class="value teal-accent">1.098</div>
-        <div class="sub">Espelho 04-26 + 7 Demonstrativos · 89,4% dos ativos</div>
+        <div class="label">Municípios atendidos</div>
+        <div class="value teal-accent">7</div>
+        <div class="sub">Ji-Paraná · Pimenta Bueno · Candeias · Nova Mamoré · Parecís · Itapuã · Machadinho</div>
       </div>
       <div class="kpi">
         <div class="label">Salário Mediano</div>
@@ -6432,6 +6473,14 @@
         <div class="label">Conformidade CCT</div>
         <div class="value">100%</div>
         <div class="sub">Todos no piso ou acima · CCT 2025</div>
+      </div>
+    </div>
+
+    <!-- RODAPÉ DA AMOSTRA -->
+    <div class="sample-footer-teal">
+      <div class="sft-icon">ⓘ</div>
+      <div>
+        <strong>Amostra desta consulta:</strong> 1.098 funcionários extraídos individualmente do <strong>Espelho 04-26 NS GERAL</strong> (Ji-Paraná + Machadinho · 543 trabalhadores) somado aos <strong>7 Demonstrativos de Pagamento</strong> (Itapuã, Nova Mamoré, Pimenta Bueno, Candeias SEMED/SEMUSA/SEMUSB, Parecís · 555 trabalhadores), representando <strong>89,4% do quadro ativo</strong> (1.098 de 1.213). <span class="sft-tag">LGPD-compliant</span> — apenas iniciais públicas, sem CPF/RG/endereço.
       </div>
     </div>
   </div>
