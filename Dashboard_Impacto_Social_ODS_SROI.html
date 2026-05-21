@@ -3258,6 +3258,144 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ── EXPLICAÇÃO DOS ODS (P1) ─────────────────────── */
+  .ods-explain {
+    background: #fff;
+    border: 1px solid #e0e2e8;
+    border-radius: 14px;
+    padding: 32px 36px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05), 0 6px 20px rgba(0,0,0,0.04);
+    margin-bottom: 28px;
+  }
+  .oex-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .oex-logo {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #1e40af 0%, #15803d 50%, #c5192d 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    box-shadow: 0 4px 14px rgba(30,64,175,0.25);
+  }
+  .oex-title-block .oex-eyebrow {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 4px;
+  }
+  .oex-title-block h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .oex-title-block p {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .oex-body {
+    font-size: 13.5px;
+    color: var(--ink-2);
+    line-height: 1.7;
+  }
+  .oex-body p { margin-bottom: 14px; }
+  .oex-body p:last-child { margin-bottom: 0; }
+  .oex-body strong { color: var(--ink); font-weight: 700; }
+
+  .oex-importance {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .oex-imp-item {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 14px 16px;
+    border-left: 3px solid var(--wine);
+  }
+  .oex-imp-item h6 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+    letter-spacing: -0.005em;
+  }
+  .oex-imp-item p {
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .oex-our-4 {
+    background: linear-gradient(135deg, rgba(124,29,58,0.05) 0%, #fff 70%);
+    border: 1px solid var(--wine-border);
+    border-left: 4px solid var(--wine);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ink-2);
+  }
+  .oex-our-4 strong { color: var(--ink); font-weight: 700; }
+  .oex-our-4 .oex-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .oex-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .oex-chip-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .oex-chip-num.o4 { background: var(--ods-4); }
+  .oex-chip-num.o5 { background: var(--ods-5); }
+  .oex-chip-num.o8 { background: var(--ods-8); }
+  .oex-chip-num.o10 { background: var(--ods-10); }
+
+  @media (max-width: 768px) {
+    .oex-importance { grid-template-columns: 1fr; }
+  }
+
   /* ── BOTÃO IMPRIMIR PDF (Nav) ────────────────────── */
   .nav-print-btn {
     display: inline-flex;
@@ -4586,6 +4724,57 @@
       <div class="eyebrow">Capítulo 03</div>
       <h2>Contribuição aos Objetivos de Desenvolvimento Sustentável</h2>
       <p>Como o investimento dialoga com a agenda 2030 da ONU em quatro frentes.</p>
+    </div>
+
+    <!-- EXPLICAÇÃO DOS ODS -->
+    <div class="ods-explain">
+      <div class="oex-header">
+        <div class="oex-logo">ODS</div>
+        <div class="oex-title-block">
+          <div class="oex-eyebrow">Agenda 2030 · Organização das Nações Unidas</div>
+          <h3>O que são os Objetivos de Desenvolvimento Sustentável?</h3>
+          <p>Compromisso internacional firmado pelo Brasil em 2015 · 17 objetivos · 169 metas até 2030</p>
+        </div>
+      </div>
+
+      <div class="oex-body">
+        <p>
+          Os <strong>Objetivos de Desenvolvimento Sustentável (ODS)</strong> são uma agenda mundial composta por <strong>17 objetivos e 169 metas</strong>, adotada pela ONU em setembro de 2015 e assinada por todos os 193 Estados-membros — incluindo o <strong>Brasil</strong>. Os ODS são o "manual" internacional para construir, até 2030, um mundo socialmente justo, ambientalmente sustentável e economicamente próspero.
+        </p>
+        <p>
+          Os 17 objetivos abrangem áreas como erradicação da pobreza, igualdade de gênero, trabalho decente, redução de desigualdades, educação de qualidade, saúde, energia limpa, ação climática, paz e justiça — entre outros. Cada objetivo traz indicadores mensuráveis e metas concretas, permitindo que governos, empresas e organizações monitorem seu impacto real.
+        </p>
+
+        <div class="oex-importance">
+          <div class="oex-imp-item">
+            <h6>Por que importa no setor público?</h6>
+            <p>A <strong>Lei 14.133/2021</strong> (Nova Lei de Licitações) determinou expressamente que as contratações públicas devem promover o <strong>desenvolvimento nacional sustentável</strong> (Art. 11, IV) — alinhando-se aos ODS. Cada contrato administrativo deve ser avaliado pelo seu retorno econômico <strong>E social</strong>.</p>
+          </div>
+          <div class="oex-imp-item">
+            <h6>Por que importa para a defesa?</h6>
+            <p>Demonstrar o alinhamento da contratação aos ODS comprova que o investimento gera <strong>valor público mensurável</strong> além da economia financeira. É o que diferencia um gasto bom de um gasto qualquer — e é argumento técnico defensável perante o TCE/RO.</p>
+          </div>
+          <div class="oex-imp-item">
+            <h6>Por que importa internacionalmente?</h6>
+            <p>Brasil é signatário da Agenda 2030 desde 2015 (Decreto s/n de 04/09/2015). O <strong>cumprimento dos ODS é monitorado pelo IBGE</strong>, pelo IPEA e pelo PNUD, com relatórios anuais ao Conselho Econômico e Social da ONU.</p>
+          </div>
+          <div class="oex-imp-item">
+            <h6>Por que importa para os trabalhadores?</h6>
+            <p>Os ODS colocam o <strong>trabalho decente</strong> (ODS 8) como pilar central do desenvolvimento. Empregos CLT, com piso CCT respeitado e direitos garantidos — exatamente o modelo praticado na ARP analisada — são unidade básica de cumprimento dessa agenda.</p>
+          </div>
+        </div>
+
+        <div class="oex-our-4">
+          <strong>Os 4 ODS atendidos pela contratação Norte &amp; Sul:</strong>
+          <div class="oex-chips">
+            <span class="oex-chip"><span class="oex-chip-num o4">04</span> Educação de Qualidade</span>
+            <span class="oex-chip"><span class="oex-chip-num o5">05</span> Igualdade de Gênero</span>
+            <span class="oex-chip"><span class="oex-chip-num o8">08</span> Trabalho Decente e Crescimento Econômico</span>
+            <span class="oex-chip"><span class="oex-chip-num o10">10</span> Redução das Desigualdades</span>
+          </div>
+          <p style="margin-top:12px; margin-bottom:0;">Cada um destes 4 objetivos é cumprido com evidência documental — folhas de pagamento conformes, treinamentos CCT/NRs comprovados, regime CLT integral, capilaridade em municípios vulneráveis. Os cards abaixo mostram como cada ODS é especificamente atendido.</p>
+        </div>
+      </div>
     </div>
 
     <div class="ods-grid">

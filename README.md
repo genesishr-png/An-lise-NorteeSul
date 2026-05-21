@@ -33,6 +33,30 @@ Após ativação do GitHub Pages, o link público fica:
 | Amostra granular com dados | 1.098 | Espelho + 7 Demonstrativos |
 | População dos 7 municípios | 250.465 hab. | IBGE Censo 2022 |
 
+## 🌍 O que são os ODS (Objetivos de Desenvolvimento Sustentável)?
+
+Os **ODS** são uma agenda global composta por **17 objetivos e 169 metas**, adotada pela **Organização das Nações Unidas (ONU)** em **setembro de 2015**. O **Brasil é signatário** desde então (Decreto s/n de 04/09/2015) e o cumprimento da agenda é monitorado por IBGE, IPEA e PNUD.
+
+Os objetivos cobrem áreas como erradicação da pobreza, trabalho decente, igualdade de gênero, educação de qualidade, redução de desigualdades, ação climática, paz e justiça — entre outros. Cada objetivo tem indicadores mensuráveis até 2030.
+
+### Por que os ODS importam nesta análise?
+
+| Razão | Impacto |
+|---|---|
+| **Lei 14.133/2021 · Art. 11, IV** | Determina que toda contratação pública deve promover o **desenvolvimento nacional sustentável** — alinhamento direto com a Agenda 2030 |
+| **Avaliação de valor público** | Permite mensurar o retorno **social** de um contrato, não apenas o financeiro |
+| **Defesa técnica perante o TCE** | Demonstra que o investimento gera **valor público auditável** além da economia financeira |
+| **Compromisso internacional brasileiro** | Brasil assumiu publicamente até 2030 — todo gasto público deve contribuir |
+
+### Os 4 ODS atendidos pela contratação Norte & Sul
+
+| # | ODS | Como é atendido |
+|---|---|---|
+| **04** | **Educação de Qualidade** | Capacitação técnica obrigatória pela CCT 2025 (NRs, segurança do trabalho) — ~14.556 h/ano |
+| **05** | **Igualdade de Gênero** | Mesmo regime CLT e mesma tabela CCT para todos os trabalhadores (neutralidade salarial) |
+| **08** | **Trabalho Decente e Crescimento Econômico** | 1.213 empregos formais CLT, encargos recolhidos, R$ 21,3 mi/ano de folha injetada |
+| **10** | **Redução das Desigualdades** | Capilaridade em municípios pequenos (Parecís 4k hab · Itapuã 8k) onde emprego formal é escasso |
+
 ## 🏛️ Fontes documentais
 
 - **ARP n. 24CIN000226/2024** (Cláusula 17.1 — Estimativa de Consumo)
@@ -43,6 +67,7 @@ Após ativação do GitHub Pages, o link público fica:
 - **Manifestação TCE-RO** Proc. 01639/25
 - **CCT 2025** (Convenção Coletiva de Trabalho · Sindicato Terceirizados RO)
 - **IBGE Censo 2022** (dados populacionais)
+- **ONU · Agenda 2030 dos ODS** (referência metodológica de impacto social)
 
 ## 🔒 LGPD · Conformidade de Dados
 
