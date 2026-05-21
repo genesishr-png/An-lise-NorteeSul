@@ -3258,6 +3258,131 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ── HEADER HERO LAYOUT + QUICK FACTS (P1) ───────── */
+  .page-1 .header.hero-layout {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .page-1 .header.hero-layout .header-left {
+    min-width: 0;
+  }
+  .quick-facts {
+    background: linear-gradient(140deg, #0a1f3d 0%, #0e2d56 100%);
+    border-radius: 16px;
+    padding: 24px 24px 20px;
+    box-shadow: 0 6px 28px rgba(10,31,61,0.2), 0 12px 40px rgba(10,31,61,0.12);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .quick-facts::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--wine), #4ade80);
+  }
+  .qf-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 4px;
+  }
+  .qf-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: -0.005em;
+  }
+  .qf-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .qf-item {
+    background: rgba(255,255,255,0.04);
+    padding: 14px 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: background 0.18s;
+  }
+  .qf-item:hover { background: rgba(255,255,255,0.07); }
+  .qf-label {
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+  }
+  .qf-value {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #fff;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .qf-value.green { color: #4ade80; }
+  .qf-meta {
+    font-size: 10.5px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+
+  /* Mini-fluxograma horizontal abaixo */
+  .qf-flow {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+  .qf-step {
+    padding: 5px 8px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 4px;
+    flex: 1;
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .qf-step.highlight {
+    background: rgba(74,222,128,0.15);
+    color: #4ade80;
+  }
+  .qf-arrow {
+    color: rgba(255,255,255,0.35);
+    font-size: 12px;
+    font-weight: 400;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 980px) {
+    .page-1 .header.hero-layout {
+      grid-template-columns: 1fr;
+    }
+    .quick-facts {
+      margin-top: 8px;
+    }
+  }
+
   /* ── EXPLICAÇÃO DOS ODS (P1) ─────────────────────── */
   .ods-explain {
     background: #fff;
@@ -4111,24 +4236,66 @@
   <div id="page-1" class="page active page-1">
 
   <!-- HEADER -->
-  <div class="header">
-    <div class="eyebrow">Análise de Impacto Social · ODS · SROI</div>
-    <h1>Retorno social do investimento em serviços terceirizados</h1>
-    <p class="subtitle">
-      <strong>ARP n. 24CIN000226/2024 — CINDERONDÔNIA : Norte &amp; Sul.</strong> Valor oficial da ARP (Cláusula 17.1): <strong>R$ 12.090.026,54/mês</strong> para a Norte &amp; Sul (R$ 145,08 mi/ano · Regiões I, III, VI, VIII).
-      <br><br>
-      A ARP sustenta o potencial de contratação máximo de <strong>2.693 postos</strong> nas 4 regiões vencidas pela Norte &amp; Sul (Manifestação TCE/RO).
-      <br><br>
-      Atualmente, os contratos derivados da ARP totalizam <strong>1.213 funcionários ativos</strong> no universo de 7 municípios de Rondônia (Folha Sintética 04/2026), representados no Dashboard a seguir.
-      <br><br>
-      Análise sob a ótica dos ODS da ONU. SROI calculado com base nos 4 contratos com documentação completa (R$ 60,9 mi · JP + PB).
-    </p>
-    <div class="meta">
-      <div><strong>Processo</strong> · TCE-RO n. 01639/25</div>
-      <div><strong>ARP</strong> · n. 24CIN000226/2024 · PE 90018/2024</div>
-      <div><strong>Período de vigência</strong> · 2024–2026</div>
-      <div><strong>Base documental</strong> · Manifestação TCE/RO · ARP Cláusula 17.1 · Folha Sintética 04/2026 · 10 Contratos firmados</div>
+  <div class="header hero-layout">
+    <div class="header-left">
+      <div class="eyebrow">Análise de Impacto Social · ODS · SROI</div>
+      <h1>Retorno social do investimento em serviços terceirizados</h1>
+      <p class="subtitle">
+        <strong>ARP n. 24CIN000226/2024 — CINDERONDÔNIA : Norte &amp; Sul.</strong> Valor oficial da ARP (Cláusula 17.1): <strong>R$ 12.090.026,54/mês</strong> para a Norte &amp; Sul (R$ 145,08 mi/ano · Regiões I, III, VI, VIII).
+        <br><br>
+        A ARP sustenta o potencial de contratação máximo de <strong>2.693 postos</strong> nas 4 regiões vencidas pela Norte &amp; Sul (Manifestação TCE/RO).
+        <br><br>
+        Atualmente, os contratos derivados da ARP totalizam <strong>1.213 funcionários ativos</strong> no universo de 7 municípios de Rondônia (Folha Sintética 04/2026), representados no Dashboard a seguir.
+        <br><br>
+        Análise sob a ótica dos ODS da ONU. SROI calculado com base nos 4 contratos com documentação completa (R$ 60,9 mi · JP + PB).
+      </p>
+      <div class="meta">
+        <div><strong>Processo</strong> · TCE-RO n. 01639/25</div>
+        <div><strong>ARP</strong> · n. 24CIN000226/2024 · PE 90018/2024</div>
+        <div><strong>Período de vigência</strong> · 2024–2026</div>
+        <div><strong>Base documental</strong> · Manifestação TCE/RO · ARP Cláusula 17.1 · Folha Sintética 04/2026 · 10 Contratos firmados</div>
+      </div>
     </div>
+
+    <!-- QUICK FACTS · Mini-painel à direita -->
+    <aside class="quick-facts" aria-label="Resumo executivo">
+      <div class="qf-eyebrow">Resumo Executivo</div>
+      <div class="qf-title">Os 4 números-chave da defesa</div>
+
+      <div class="qf-grid">
+        <div class="qf-item">
+          <span class="qf-label">Valor Oficial ARP</span>
+          <span class="qf-value">R$ 12,09 mi</span>
+          <span class="qf-meta">por mês · Cláusula 17.1</span>
+        </div>
+        <div class="qf-item">
+          <span class="qf-label">Funcionários Ativos</span>
+          <span class="qf-value">1.213</span>
+          <span class="qf-meta">em 7 municípios · 04/2026</span>
+        </div>
+        <div class="qf-item">
+          <span class="qf-label">Retorno Social (SROI)</span>
+          <span class="qf-value green">2,13×</span>
+          <span class="qf-meta">por R$ 1 investido</span>
+        </div>
+        <div class="qf-item">
+          <span class="qf-label">Conformidade CCT</span>
+          <span class="qf-value green">100%</span>
+          <span class="qf-meta">17 cargos · piso ou acima</span>
+        </div>
+      </div>
+
+      <!-- Mini-fluxograma -->
+      <div class="qf-flow">
+        <span class="qf-step">Lei 14.133</span>
+        <span class="qf-arrow">→</span>
+        <span class="qf-step">PE 90018</span>
+        <span class="qf-arrow">→</span>
+        <span class="qf-step">ARP</span>
+        <span class="qf-arrow">→</span>
+        <span class="qf-step highlight">Valor Social</span>
+      </div>
+    </aside>
   </div>
 
   <!-- KPIs -->
