@@ -3258,6 +3258,246 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ── BOTÃO IMPRIMIR PDF (Nav) ────────────────────── */
+  .nav-print-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 16px;
+    background: var(--wine);
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    box-shadow: 0 1px 3px rgba(124,29,58,0.25);
+    margin-left: 12px;
+    vertical-align: middle;
+  }
+  .nav-print-btn:hover {
+    background: var(--wine-strong);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(124,29,58,0.3);
+  }
+  .nav-print-btn:active { transform: translateY(0); }
+  .nav-print-btn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+  @media print {
+    .nav-print-btn { display: none !important; }
+  }
+
+  /* ── BOTÃO EXPORT CSV (P5) ───────────────────────── */
+  .export-csv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #0d9488;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    box-shadow: 0 1px 3px rgba(13,148,136,0.25);
+  }
+  .export-csv-btn:hover {
+    background: #0f766e;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(13,148,136,0.3);
+  }
+  .export-csv-btn:active {
+    transform: translateY(0);
+  }
+  .export-csv-btn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  /* ── CAPILARIDADE REGIONAL (P3) ──────────────────── */
+  .capilaridade-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .cap-card {
+    background: #fff;
+    border: 1px solid #e0e2e8;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cap-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  }
+  .cap-card.priority {
+    border-left: 3px solid #be185d;
+    background: linear-gradient(135deg, rgba(190,24,93,0.04) 0%, #fff 70%);
+  }
+  .cap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .cap-mun {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .cap-pop {
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .cap-pop strong { color: var(--ink-2); font-weight: 600; }
+  .cap-pct {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--navy);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .cap-card.priority .cap-pct { color: #be185d; }
+  .cap-pct-label {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 4px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .cap-bar {
+    height: 6px;
+    background: #f0f1f5;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .cap-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--navy), #1e40af);
+    border-radius: 3px;
+  }
+  .cap-card.priority .cap-bar-fill {
+    background: linear-gradient(90deg, #be185d, #db2777);
+  }
+  .cap-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 11.5px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--border);
+  }
+  .cap-meta-item span {
+    color: var(--muted);
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .cap-meta-item strong {
+    color: var(--ink);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (max-width: 768px) {
+    .capilaridade-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── EXPLICAÇÃO DA PERSISTENCE CURVE (P1) ────────── */
+  .persistence-explain {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .pe-card {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 18px 20px;
+    border-left: 3px solid var(--accent);
+  }
+  .pe-card.during { border-left-color: var(--accent); }
+  .pe-card.after { border-left-color: var(--success); }
+  .pe-card h5 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .pe-card.during h5 { color: var(--accent); }
+  .pe-card.after h5 { color: var(--success); }
+  .pe-card h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: -0.005em;
+  }
+  .pe-card p {
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .pe-card strong { color: var(--ink); font-weight: 600; }
+  .pe-conclusion {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, var(--accent) 0%, #1e293b 100%);
+    color: #fafaf9;
+    padding: 20px 24px;
+    border-radius: 10px;
+    margin-top: 4px;
+  }
+  .pe-conclusion .pec-eyebrow {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 8px;
+  }
+  .pe-conclusion p {
+    font-size: 13.5px;
+    line-height: 1.7;
+    margin: 0;
+    color: rgba(255,255,255,0.92);
+  }
+  .pe-conclusion strong { color: #fff; font-weight: 700; }
+  .pe-conclusion .pec-highlight { color: #4ade80; font-weight: 700; }
+
+  @media (max-width: 768px) {
+    .persistence-explain { grid-template-columns: 1fr; }
+  }
+
   /* ── RODAPÉ DA AMOSTRA (P4) ──────────────────────── */
   .sample-footer {
     display: flex;
@@ -3679,6 +3919,10 @@
       <a href="#page-3" class="nav-tab green" data-page="page-3">Conformidade do Quadro Operacional</a>
       <a href="#page-4" class="nav-tab gold" data-page="page-4">Análise Salarial por Cargo</a>
       <a href="#page-5" class="nav-tab teal" data-page="page-5">Consulta de Funcionários</a>
+      <button class="nav-print-btn" onclick="window.print()" title="Imprimir / Salvar como PDF">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/><path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7z"/></svg>
+        Imprimir / PDF
+      </button>
     </div>
   </nav>
 
@@ -4262,6 +4506,26 @@
               <div class="pcs-label">Total acumulado (6 anos)</div>
               <div class="pcs-value">R$ 195,8 mi</div>
               <div class="pcs-sub">VP descontado a 5% = R$ 173 mi</div>
+            </div>
+          </div>
+
+          <!-- EXPLICAÇÃO DA CURVA -->
+          <div class="persistence-explain">
+            <div class="pe-card during">
+              <h5>Como ler · Durante o Contrato</h5>
+              <h6>Outcomes plenos · 2024–2026</h6>
+              <p>Enquanto a Norte &amp; Sul mantém os contratos ativos, <strong>todos os 9 outcomes operam simultaneamente</strong>: renda direta, encargos, multiplicador local, economia em benefícios, inclusão, dignidade, formalização, capacitação e demanda comercial. As barras navy representam a soma anual desses outcomes (~R$ 78,7 mi/ano).</p>
+            </div>
+
+            <div class="pe-card after">
+              <h5>Como ler · Pós-Contrato</h5>
+              <h6>Persistência decrescente · 2027–2030</h6>
+              <p>Mesmo após o término dos contratos, <strong>4 outcomes intangíveis continuam gerando valor</strong>: capacitação técnica adquirida, formalização CTPS (aposentadoria e benefícios futuros), empoderamento e inclusão regional. Esses benefícios <strong>decaem 30% ao ano</strong>, mas persistem por anos — como mostram as barras verdes.</p>
+            </div>
+
+            <div class="pe-conclusion">
+              <div class="pec-eyebrow">Por que essa análise importa</div>
+              <p>O gráfico revela que o impacto da contratação <strong>NÃO termina</strong> quando o contrato termina. Os trabalhadores capacitados, formalizados e empoderados <span class="pec-highlight">continuam gerando R$ 38,3 milhões de valor social adicional</span> nos 4 anos seguintes à extinção do contrato. <strong>O retorno social total acumulado é de R$ 195,8 milhões em 6 anos</strong> (R$ 173 mi em valor presente, descontado a 5% a.a.) — argumento decisivo para sustentar o investimento perante o TCE/RO.</p>
             </div>
           </div>
         </div>
@@ -5361,77 +5625,145 @@
     </div>
 
     <div class="card">
-      <div class="municipios-list">
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Ji-Paraná</div>
-            <div class="mun-sub">6 secretarias (SEMED · SEMUSA · SEMOSP · SEMASF · Gabinete · SEMMA)</div>
+      <p style="font-size:12.5px; color:var(--muted); margin-bottom:18px; padding:12px 14px; background:#fafafa; border-radius:8px; border-left:3px solid var(--wine);">
+        <strong style="color:var(--ink);">Ordenação por impacto populacional:</strong> os municípios menores aparecem primeiro porque a presença da Norte &amp; Sul tem peso proporcional maior na economia local. Em Parecís, por exemplo, 0,82% da população está empregada formalmente pela empresa — proporção significativa para localidades com poucas alternativas de emprego formal.
+      </p>
+
+      <div class="capilaridade-grid">
+
+        <!-- 1. PARECÍS (maior impacto relativo) -->
+        <div class="cap-card priority">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Parecís</div>
+              <div class="cap-pop"><strong>4.125 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,82%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:100%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:82%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>34 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidade</span><strong>Prefeitura Municipal</strong></div>
           </div>
-          <div class="mun-count">~636</div>
         </div>
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Pimenta Bueno</div>
-            <div class="mun-sub">Município participante original da ARP — SEMOSP, SEMUSA, SEMFAZ, SEMAST, SEMMA, SEMAGRI</div>
+
+        <!-- 2. CANDEIAS DO JAMARI -->
+        <div class="cap-card priority">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Candeias do Jamari</div>
+              <div class="cap-pop"><strong>22.310 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,73%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:27.7%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:73%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>164 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidades</span><strong>SEMED · SEMUSA · SEMUSB</strong></div>
           </div>
-          <div class="mun-count">~176</div>
         </div>
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Candeias do Jamari</div>
-            <div class="mun-sub">SEMED · SEMUSA · Prefeitura Municipal · adesão à ARP</div>
+
+        <!-- 3. PIMENTA BUENO -->
+        <div class="cap-card">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Pimenta Bueno</div>
+              <div class="cap-pop"><strong>34.998 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,57%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:24.4%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:57%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>201 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidades</span><strong>6 secretarias municipais</strong></div>
           </div>
-          <div class="mun-count">~155</div>
         </div>
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Nova Mamoré</div>
-            <div class="mun-sub">Prefeitura Municipal · adesão à ARP</div>
+
+        <!-- 4. NOVA MAMORÉ -->
+        <div class="cap-card">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Nova Mamoré</div>
+              <div class="cap-pop"><strong>25.444 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,52%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:20.1%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:52%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>132 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidade</span><strong>Prefeitura Municipal</strong></div>
           </div>
-          <div class="mun-count">~128</div>
         </div>
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Machadinho D'Oeste</div>
-            <div class="mun-sub">Prefeitura Municipal · adesão à ARP</div>
+
+        <!-- 5. JI-PARANÁ -->
+        <div class="cap-card">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Ji-Paraná</div>
+              <div class="cap-pop"><strong>124.333 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,39%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:9.3%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:39%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>491 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidades</span><strong>SEMED · SEMUSA · SEMOSP · SEMASF</strong></div>
           </div>
-          <div class="mun-count">~59</div>
         </div>
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Parecís</div>
-            <div class="mun-sub">Prefeitura Municipal · adesão à ARP</div>
+
+        <!-- 6. ITAPUÃ DO OESTE -->
+        <div class="cap-card">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Itapuã do Oeste</div>
+              <div class="cap-pop"><strong>8.548 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,35%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:4.9%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:35%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>30 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidade</span><strong>Prefeitura Municipal</strong></div>
           </div>
-          <div class="mun-count">~31</div>
         </div>
-        <div class="mun-row">
-          <div class="mun-info">
-            <div class="mun-name">Itapuã do Oeste</div>
-            <div class="mun-sub">Prefeitura Municipal · adesão à ARP</div>
+
+        <!-- 7. MACHADINHO D'OESTE -->
+        <div class="cap-card">
+          <div class="cap-header">
+            <div>
+              <div class="cap-mun">Machadinho D'Oeste</div>
+              <div class="cap-pop"><strong>30.707 hab.</strong> · IBGE Censo 2022</div>
+            </div>
+            <div>
+              <div class="cap-pct">0,15%</div>
+              <div class="cap-pct-label">População Empregada</div>
+            </div>
           </div>
-          <div class="mun-bar-wrap">
-            <div class="mun-bar" style="width:4.4%"></div>
+          <div class="cap-bar"><div class="cap-bar-fill" style="width:15%"></div></div>
+          <div class="cap-meta">
+            <div class="cap-meta-item"><span>Funcionários N&amp;S</span><strong>46 ativos</strong></div>
+            <div class="cap-meta-item"><span>Unidade</span><strong>Prefeitura Municipal</strong></div>
           </div>
-          <div class="mun-count">~28</div>
         </div>
+
       </div>
 
       <div class="cap-summary">
@@ -6179,6 +6511,10 @@
       <div class="ss-summary">
         <div>Salário médio: <strong id="resultAvg">R$ 0</strong></div>
         <div>Folha total: <strong id="resultSum">R$ 0</strong></div>
+        <button class="export-csv-btn" id="exportCsvBtn" title="Baixar resultados filtrados em CSV">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a.5.5 0 0 1 .5.5v9.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 11.293V1.5A.5.5 0 0 1 8 1zm-5 13.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/></svg>
+          Exportar CSV
+        </button>
       </div>
     </div>
 
@@ -6388,6 +6724,74 @@
   filterM.addEventListener('change', render);
   filterC.addEventListener('change', render);
   filterG.addEventListener('change', render);
+
+  /* ── EXPORTAR CSV ── */
+  var exportBtn = document.getElementById('exportCsvBtn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', function() {
+      var q       = norm(input.value);
+      var fmun    = filterM.value;
+      var fcar    = filterC.value;
+      var fgen    = filterG.value;
+      var filtered = DATA.filter(function(r) {
+        if (fmun && r.mun !== fmun) return false;
+        if (fcar && r.car !== fcar) return false;
+        if (fgen && r.gen !== fgen) return false;
+        if (q) {
+          var bag = norm(r.ini + ' ' + r.car + ' ' + r.mun + ' ' + r.id);
+          if (bag.indexOf(q) === -1) return false;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        alert('Nenhum funcionário para exportar. Ajuste os filtros.');
+        return;
+      }
+
+      /* Escapar valores CSV */
+      function esc(v) {
+        if (v === null || v === undefined) return '';
+        var s = String(v);
+        if (s.indexOf(';') !== -1 || s.indexOf('"') !== -1 || s.indexOf('\n') !== -1) {
+          s = '"' + s.replace(/"/g, '""') + '"';
+        }
+        return s;
+      }
+
+      /* Cabeçalho */
+      var header = ['ID','Iniciais','Gênero','Município','Região','Cargo','Admissão','Tempo (meses)','Salário Base (R$)'];
+      var rows = [header.join(';')];
+
+      filtered.forEach(function(r) {
+        rows.push([
+          esc(r.id), esc(r.ini), esc(r.gen),
+          esc(r.mun), esc(r.reg), esc(r.car),
+          esc(r.adm), esc(r.tmp),
+          esc(r.sal.toFixed(2).replace('.',','))
+        ].join(';'));
+      });
+
+      var csv = '﻿' + rows.join('\r\n');  // BOM UTF-8 para Excel
+      var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+
+      /* Nome do arquivo com timestamp */
+      var dt = new Date();
+      var ts = dt.getFullYear() + String(dt.getMonth()+1).padStart(2,'0') + String(dt.getDate()).padStart(2,'0') +
+               '_' + String(dt.getHours()).padStart(2,'0') + String(dt.getMinutes()).padStart(2,'0');
+      var filename = 'NorteSul_Funcionarios_' + filtered.length + '_' + ts + '.csv';
+
+      /* Trigger download */
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  }
 
   /* Render inicial */
   render();
