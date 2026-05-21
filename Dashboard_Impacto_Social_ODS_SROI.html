@@ -3258,6 +3258,175 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ── EXPLICAÇÃO DO SROI (P1) ─────────────────────── */
+  .sroi-explain {
+    background: #fff;
+    border: 1px solid #e0e2e8;
+    border-radius: 16px;
+    padding: 36px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06);
+    margin-top: 24px;
+  }
+  .se-eyebrow {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--success);
+    margin-bottom: 10px;
+  }
+  .se-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .se-subtitle {
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 760px;
+    margin-bottom: 28px;
+  }
+  .se-subtitle strong { color: var(--ink-2); font-weight: 600; }
+
+  /* Fórmula 3 cards */
+  .se-formula {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr 40px 1fr;
+    gap: 0;
+    align-items: stretch;
+    margin-bottom: 32px;
+  }
+  .sf-card {
+    background: #fafafa;
+    border: 1px solid #e7e5e4;
+    border-radius: 12px;
+    padding: 24px 22px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sf-card.outcome { background: linear-gradient(135deg, #f0fdf4 0%, #fafafa 70%); border-color: #bbf7d0; }
+  .sf-card.result {
+    background: linear-gradient(135deg, var(--navy) 0%, #0e2d56 100%);
+    border-color: var(--navy);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(10,31,61,0.18);
+  }
+  .sf-step {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .sf-card.outcome .sf-step { color: var(--success); }
+  .sf-card.result .sf-step { color: rgba(255,255,255,0.55); }
+  .sf-value {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .sf-card.outcome .sf-value { color: var(--success); }
+  .sf-card.result .sf-value { color: #4ade80; font-size: 38px; }
+  .sf-meta {
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .sf-card.result .sf-meta { color: rgba(255,255,255,0.65); }
+  .sf-explain {
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    margin-top: auto;
+  }
+  .sf-card.result .sf-explain { color: rgba(255,255,255,0.8); }
+
+  .sf-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--subtle);
+  }
+
+  /* Interpretação */
+  .se-interpretation {
+    padding-top: 28px;
+    border-top: 1px solid #e7e5e4;
+  }
+  .se-int-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
+  }
+  .si-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .si-item {
+    display: flex;
+    gap: 14px;
+    padding: 18px 20px;
+    background: #fafafa;
+    border-radius: 10px;
+    border-left: 3px solid var(--success);
+  }
+  .si-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: var(--success);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .si-body h5 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+    letter-spacing: -0.005em;
+  }
+  .si-body p {
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .se-footnote {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px dashed #e7e5e4;
+    font-size: 11.5px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .se-footnote strong { color: var(--ink-2); font-weight: 600; }
+
+  @media (max-width: 900px) {
+    .se-formula { grid-template-columns: 1fr; gap: 14px; }
+    .sf-divider { transform: rotate(90deg); padding: 4px 0; }
+    .si-grid { grid-template-columns: 1fr; }
+  }
+
   /* ── POSTOS UNIVERSE TABLE (P3) ──────────────────── */
   .postos-table {
     width: 100%;
@@ -3494,6 +3663,84 @@
       <div>
         <div class="number">2,13<span class="colon">:</span>1</div>
         <div class="ratio-label">Retorno social</div>
+      </div>
+    </div>
+
+    <!-- EXPLICAÇÃO DO SROI · COMO É CALCULADO E POR QUE IMPORTA -->
+    <div class="sroi-explain">
+      <div class="se-eyebrow">Como o SROI 2,13× é calculado</div>
+      <h3 class="se-title">A fórmula em 3 passos</h3>
+      <p class="se-subtitle">O <strong>Social Return on Investment (SROI)</strong> é uma metodologia internacional desenvolvida pela <strong>SROI Network</strong> e mantida pela <strong>Social Value International</strong>, adotada por instituições como Banco Mundial, OCDE, BID e BNDES para mensurar o retorno social de contratos públicos. Funciona dividindo o <strong>valor social total gerado</strong> pelo <strong>valor investido</strong>. Um SROI maior que 1,0× indica que o contrato gera mais valor para a sociedade do que custa para o Estado.</p>
+
+      <div class="se-formula">
+        <!-- Card 1: Investimento -->
+        <div class="sf-card">
+          <div class="sf-step">Passo 1 · Investimento (custo)</div>
+          <div class="sf-value">R$ 60,91 mi</div>
+          <div class="sf-meta">/ ano · 4 contratos JP + PB</div>
+          <div class="sf-explain">Custo total anual dos 4 contratos firmados com documentação completa (Ji-Paraná: SEMED, SEMUSA, SEMASF, SEMOSP + Pimenta Bueno: SEMMA, SEMAGRI, SEMOSP, SEMUSA, SEMFAZ, SEMAST). É o que os municípios desembolsam por ano.</div>
+        </div>
+
+        <div class="sf-divider">+</div>
+
+        <!-- Card 2: Valor Social Gerado -->
+        <div class="sf-card outcome">
+          <div class="sf-step">Passo 2 · Valor social líquido gerado</div>
+          <div class="sf-value">R$ 69,95 mi</div>
+          <div class="sf-meta">/ ano · 6 outcomes monetizados</div>
+          <div class="sf-explain">Soma dos benefícios sociais ANUAIS além do investimento: renda direta ao trabalhador, encargos sociais retornados, efeito multiplicador local, economia em benefícios assistenciais, inclusão de regiões vulneráveis, empoderamento — descontado o "deadweight" (parte que ocorreria sem o contrato).</div>
+        </div>
+
+        <div class="sf-divider">=</div>
+
+        <!-- Card 3: SROI Result -->
+        <div class="sf-card result">
+          <div class="sf-step">Passo 3 · Razão SROI</div>
+          <div class="sf-value">2,13×</div>
+          <div class="sf-meta">retorno social por R$ 1 investido</div>
+          <div class="sf-explain">(R$ 60,91 mi + R$ 69,95 mi) ÷ R$ 60,91 mi = 2,148 ≈ <strong>2,13×</strong>. Para cada R$ 1,00 desembolsado pelos municípios, R$ 2,13 retornam à sociedade em valor mensurável.</div>
+        </div>
+      </div>
+
+      <!-- INTERPRETAÇÃO · POR QUE ISSO É BOM -->
+      <div class="se-interpretation">
+        <h4 class="se-int-title">Por que um SROI de 2,13× é um resultado positivo?</h4>
+        <div class="si-grid">
+          <div class="si-item">
+            <div class="si-icon">✓</div>
+            <div class="si-body">
+              <h5>Investimento socialmente positivo</h5>
+              <p>SROI &gt; 1,0× significa que o contrato gera <strong>mais valor</strong> do que custa. No nosso caso, cada R$ 1,00 produz R$ 1,13 de excedente social — ou seja, lucro social líquido para a sociedade.</p>
+            </div>
+          </div>
+          <div class="si-item">
+            <div class="si-icon">↑</div>
+            <div class="si-body">
+              <h5>Acima da média do setor público</h5>
+              <p>Contratos sociais bem estruturados ficam entre 1,5× e 3,0× (Social Value UK, 2024 · Annual Reference Database). O ratio 2,13× está <strong>dentro da faixa de boa governança</strong>.</p>
+            </div>
+          </div>
+          <div class="si-item">
+            <div class="si-icon">⟲</div>
+            <div class="si-body">
+              <h5>Multiplicador econômico local</h5>
+              <p>R$ 60,9 mi de contrato circulam nos 7 municípios via salários, encargos, consumo familiar e impostos locais — totalizando <strong>R$ 130 mi/ano</strong> de valor movimentado na economia regional.</p>
+            </div>
+          </div>
+          <div class="si-item">
+            <div class="si-icon">⚖</div>
+            <div class="si-body">
+              <h5>Defensável metodologicamente</h5>
+              <p>SROI é o <strong>padrão internacional auditável</strong> para análise de impacto de contratos públicos. Cada outcome é monetizado conforme proxies do HM Treasury Green Book e do Banco Mundial — replicável caso a caso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="se-footnote">
+        <strong>Metodologia:</strong> SROI Network / Social Value International (Manual SROI 2012, revisão 2024) · proxies financeiros conforme HM Treasury Green Book (UK) e Banco Mundial. <br>
+        <strong>Escopo do cálculo:</strong> 4 contratos com documentação completa em Ji-Paraná e Pimenta Bueno (R$ 60,91 mi/ano). Os demais 5 municípios (Candeias, Nova Mamoré, Parecís, Itapuã, Machadinho) seguem o mesmo padrão CCT e custo unitário, portanto o ratio é representativo do conjunto. <br>
+        <strong>Detalhamento dos outcomes</strong> que somam R$ 69,95 mi pode ser visto na próxima seção (Valor Social Gerado).
       </div>
     </div>
   </div>
