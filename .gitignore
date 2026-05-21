@@ -1,0 +1,57 @@
+# ============================================
+# GITIGNORE · Análise NorteeSul Dashboard
+# ============================================
+# Política: NEGAR tudo por padrão e LIBERAR apenas o necessário.
+# Isso protege dados sensíveis (PDFs originais, planilhas, docs, fotos)
+# de serem enviados ao repositório público.
+# ============================================
+
+# 1. Ignorar TUDO por padrão
+*
+
+# 2. EXCEÇÕES — arquivos que QUEREMOS no repositório
+!.gitignore
+!README.md
+!LICENSE
+!Dashboard_Impacto_Social_ODS_SROI.html
+
+# 3. Excluir explicitamente categorias sensíveis
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.rar
+*.7z
+*.jpeg
+*.jpg
+*.png
+*.ogg
+*.mp3
+*.mp4
+*.json
+
+# 4. Subpastas com dados sensíveis (negativa explícita)
+Contratos e Seguros/
+Fontes_Documentais/
+Manifestação*/
+Novas documentações*/
+PEDIDO DE HABILITAÇÃO/
+Resposta CINDERONDONIA/
+temp_pesquisa/
+pncp/
+
+# 5. Arquivos de IDE / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 6. Backups e temporários
+*.bak
+*.tmp
+*.swp
+*~
