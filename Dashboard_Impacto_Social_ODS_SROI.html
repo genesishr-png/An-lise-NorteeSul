@@ -3258,6 +3258,45 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ── OUTCOMES EXPLICATIVOS (P1) ──────────────────── */
+  .ol-explain {
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #fafafa;
+    border-left: 2px solid #e7e5e4;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--ink-2);
+  }
+  .ol-explain strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .ol-explain .oe-what {
+    display: inline-block;
+    color: var(--success);
+    font-weight: 700;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+  .ol-explain .oe-why {
+    display: inline-block;
+    color: var(--wine);
+    font-weight: 700;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-right: 6px;
+    margin-top: 6px;
+  }
+  .ol-negative .ol-explain {
+    background: rgba(197,25,45,0.03);
+    border-left-color: rgba(197,25,45,0.25);
+  }
+
   /* ── EXPLICAÇÃO DO SROI (P1) ─────────────────────── */
   .sroi-explain {
     background: #fff;
@@ -3817,7 +3856,10 @@
     </div>
 
     <div class="card" style="margin-bottom:16px;">
-      <h3>Investimento (inputs)</h3>
+      <h3 style="margin-bottom:4px;">Investimento (inputs)</h3>
+      <p style="font-size:12.5px; color:var(--muted); margin:0 0 18px; line-height:1.55;">
+        Custo anual total dos contratos firmados em Ji-Paraná e Pimenta Bueno · Base de cálculo do SROI 2,13× (denominador da fórmula). Os outros 5 municípios (Candeias, Nova Mamoré, Parecís, Itapuã, Machadinho) não têm contratos físicos disponíveis e estão fora deste agregado.
+      </p>
       <table>
         <thead>
           <tr><th>Origem</th><th class="num">Valor anual</th></tr>
@@ -3864,6 +3906,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:100%"></div></div>
             <div class="ol-foot"><span>35,0% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Soma anual dos salários líquidos pagos aos 1.213 trabalhadores formais. <strong>~R$ 1.748/mês em média por trabalhador</strong>, valor que chega efetivamente ao bolso e à mesa das famílias.
+              <br>
+              <span class="oe-why">Por que importa</span> É renda que <strong>literalmente alimenta ~3.396 pessoas</strong> nos núcleos familiares. Sem a continuidade do contrato, essas famílias perdem a principal fonte de subsistência — efeito devastador em municípios pequenos com poucas alternativas de emprego formal.
+            </div>
           </div>
         </div>
 
@@ -3876,6 +3923,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:85.7%"></div></div>
             <div class="ol-foot"><span>30,0% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> FGTS (8%), INSS Patronal (20%), RAT (1–3%), IRRF, ISS sobre serviço e demais contribuições que voltam diretamente aos cofres públicos (União, Estado e Municípios).
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>Para cada R$ 1,00 do contrato, R$ 0,30 volta automaticamente em tributos.</strong> É retorno fiscal imediato — o "investimento" não é gasto puro, é parcialmente recuperado pelo próprio Estado em forma de receita pública.
+            </div>
           </div>
         </div>
 
@@ -3888,6 +3940,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:70%"></div></div>
             <div class="ol-foot"><span>24,5% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Quanto cada R$ 1,00 de salário pago gera de movimentação adicional na economia local — quando o trabalhador compra no supermercado, paga aluguel, abastece o carro, esse dinheiro vira renda de outras famílias (multiplicador BNDES = 1,2× a 1,5× para municípios pequenos).
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>R$ 60,9 mi de contrato circulam virando ~R$ 91 mi de movimentação na economia regional.</strong> O salário é apenas o pontapé inicial — o efeito cascata fortalece comércio, prestadores de serviço e arrecadação municipal.
+            </div>
           </div>
         </div>
 
@@ -3900,6 +3957,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:30.7%"></div></div>
             <div class="ol-foot"><span>10,7% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Quanto o Estado <strong>deixa de gastar</strong> em Bolsa Família, BPC, programas assistenciais e auxílio-emergencial porque esses 1.213 trabalhadores e seus dependentes <strong>não dependem de assistência</strong> — têm renda formal e estável.
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>O contrato substitui assistencialismo por trabalho formal.</strong> Funciona como política pública de duplo benefício: gera trabalho digno E libera recursos do orçamento social para quem realmente precisa.
+            </div>
           </div>
         </div>
 
@@ -3912,6 +3974,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:22.3%"></div></div>
             <div class="ol-foot"><span>7,8% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Valor adicional atribuído pelo fato de os empregos serem em municípios de baixo IDH (Parecís 0,659 · Itapuã 0,680 · Nova Mamoré 0,651) e alta vulnerabilidade — onde a oferta de emprego formal é estruturalmente escassa.
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>Um emprego formal em Parecís vale socialmente mais que um emprego formal em uma capital.</strong> A defesa argumenta exatamente isso ao TCE-RO: a anulação do contrato impacta desproporcionalmente as populações mais frágeis.
+            </div>
           </div>
         </div>
 
@@ -3924,6 +3991,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:18.2%"></div></div>
             <div class="ol-foot"><span>6,4% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Valor monetizado da diferença entre trabalho informal e trabalho CLT: carteira assinada, FGTS, aposentadoria, 13º, férias remuneradas, INSS, direito ao seguro-desemprego, acesso a crédito bancário e comprovação de renda formal.
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>Não é só renda hoje — é segurança e cidadania.</strong> O trabalhador formalizado pode planejar a vida, financiar moradia, contar com aposentadoria futura, ter dignidade documental. Em uma região com 38,7% de informalidade, isso é transformador.
+            </div>
           </div>
         </div>
 
@@ -3936,6 +4008,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:16.4%"></div></div>
             <div class="ol-foot"><span>5,7% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Valor atribuído à redução do trabalho informal — cada vaga formal substitui uma vaga informal em potencial (sem carteira, sem direitos, sem contribuição previdenciária). Estimativa baseada em IPEA e PNAD-C.
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>Reduz a "economia paralela" da região.</strong> Cada CTPS assinada significa: mais arrecadação previdenciária, menos litígio trabalhista, mais cidadãos com direitos plenos. É uma engrenagem positiva para o sistema.
+            </div>
           </div>
         </div>
 
@@ -3948,6 +4025,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:13.6%"></div></div>
             <div class="ol-foot"><span>4,7% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Valor das horas de capacitação obrigatórias (Normas Regulamentadoras de segurança do trabalho, treinamentos em saúde ocupacional, reciclagens periódicas — exigidos pela CCT 2025 e pelo MTE).
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>~14.556 horas/ano de capacitação técnica gratuita</strong> aos trabalhadores (12h × 1.213). Eles saem do contrato com qualificação certificada — vantagem competitiva permanente no mercado formal.
+            </div>
           </div>
         </div>
 
@@ -3960,6 +4042,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill" style="width:12.7%"></div></div>
             <div class="ol-foot"><span>4,4% do investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Estimativa específica do consumo realizado pelos trabalhadores no comércio local (mercado, farmácia, vestuário, transporte). Parte do efeito multiplicador, isolada para evidenciar a contribuição direta ao comércio do entorno.
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>~R$ 225 mil/mês injetados no comércio dos 7 municípios.</strong> Esse valor sustenta pequenos empreendedores locais, gera tributos municipais (ICMS, ISS) e movimenta a base da pirâmide econômica regional.
+            </div>
           </div>
         </div>
 
@@ -3972,6 +4059,11 @@
             </div>
             <div class="ol-bar"><div class="ol-bar-fill neg" style="width:41.4%"></div></div>
             <div class="ol-foot"><span>Descontados 15% do valor bruto · o que existiria sem o investimento</span></div>
+            <div class="ol-explain">
+              <span class="oe-what">O que é</span> Ajuste metodológico padrão SROI — desconta a parte do valor social que <strong>aconteceria de qualquer jeito</strong>, mesmo sem o contrato (ex: parte dos trabalhadores conseguiria outro emprego, alguns benefícios fiscais existiriam de qualquer forma). Aplicado conforme HM Treasury Green Book.
+              <br>
+              <span class="oe-why">Por que importa</span> <strong>É um desconto que TORNA a análise mais conservadora e defensável.</strong> Sem esse ajuste, o SROI seria 2,42×. Com o desconto de 15%, o ratio fica em 2,13× — número mais realista e que <strong>resiste a contestação técnica</strong>.
+            </div>
           </div>
         </div>
       </div>
