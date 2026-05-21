@@ -33,18 +33,14 @@ Após ativação do GitHub Pages, o link público fica:
 | Amostra granular com dados | 1.098 | Espelho + 7 Demonstrativos |
 | População dos 7 municípios | 250.465 hab. | IBGE Censo 2022 |
 
-<br>
+## 🌍 Objetivos de Desenvolvimento Sustentável (ODS)
 
-<div align="center">
-
-# 🌍 Objetivos de Desenvolvimento Sustentável
-
-![Agenda 2030](https://img.shields.io/badge/Agenda_2030-ONU-1F2A44?style=for-the-badge&logo=united-nations&logoColor=white)
-![Brasil Signatário](https://img.shields.io/badge/Brasil_Signatário-2015-009B3A?style=for-the-badge&logo=brazil&logoColor=FFD700)
-![17 Objetivos](https://img.shields.io/badge/17_Objetivos-169_Metas-DC143C?style=for-the-badge)
-![Lei 14.133](https://img.shields.io/badge/Lei_14.133/2021-Art._11_IV-7C1D3A?style=for-the-badge)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Agenda%202030-ONU-1F2A44?style=for-the-badge" alt="Agenda 2030 ONU">
+  <img src="https://img.shields.io/badge/Brasil%20Signat%C3%A1rio-2015-009B3A?style=for-the-badge" alt="Brasil Signatário 2015">
+  <img src="https://img.shields.io/badge/17%20Objetivos-169%20Metas-DC143C?style=for-the-badge" alt="17 Objetivos · 169 Metas">
+  <img src="https://img.shields.io/badge/Lei%2014.133%2F2021-Art.%2011%2C%20IV-7C1D3A?style=for-the-badge" alt="Lei 14.133/2021 Art. 11 IV">
+</p>
 
 > [!IMPORTANT]
 > Os **Objetivos de Desenvolvimento Sustentável (ODS)** são uma agenda mundial composta por **17 objetivos e 169 metas**, adotada pela **Organização das Nações Unidas (ONU)** em **setembro de 2015**. O **Brasil é signatário** desde então (Decreto s/n de 04/09/2015) e o cumprimento é monitorado por IBGE, IPEA e PNUD com relatórios anuais ao Conselho Econômico e Social da ONU.
@@ -52,118 +48,62 @@ Após ativação do GitHub Pages, o link público fica:
 > [!NOTE]
 > Os objetivos cobrem áreas como **erradicação da pobreza**, **trabalho decente**, **igualdade de gênero**, **educação de qualidade**, **redução de desigualdades**, **ação climática**, **paz e justiça** — entre outros. Cada objetivo tem indicadores mensuráveis até 2030.
 
-<br>
-
 ### 🎯 Por que os ODS importam nesta análise
 
 <table>
-<tr>
-<td width="50%" valign="top">
-
-#### ⚖️ Lei 14.133/2021 · Art. 11, IV
-
-A Nova Lei de Licitações determina expressamente que toda contratação pública deve promover o **desenvolvimento nacional sustentável** — alinhamento direto com a Agenda 2030 da ONU.
-
-</td>
-<td width="50%" valign="top">
-
-#### 📊 Avaliação de Valor Público
-
-Permite mensurar o **retorno social** de um contrato, não apenas o financeiro. Cada gasto público deve gerar valor mensurável para a sociedade.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 🏛️ Defesa Técnica perante o TCE
-
-Demonstra que o investimento gera **valor público auditável** além da economia financeira. Argumento técnico defensável perante o TCE/RO.
-
-</td>
-<td width="50%" valign="top">
-
-#### 🌐 Compromisso Internacional do Brasil
-
-Brasil assumiu publicamente cumprir os 17 ODS até **2030**. Cada gasto público deve contribuir — monitoramento por IBGE, IPEA e PNUD.
-
-</td>
-</tr>
+  <tr>
+    <th width="50%">⚖️ Lei 14.133/2021 · Art. 11, IV</th>
+    <th width="50%">📊 Avaliação de Valor Público</th>
+  </tr>
+  <tr>
+    <td>A Nova Lei de Licitações determina expressamente que toda contratação pública deve promover o <b>desenvolvimento nacional sustentável</b> — alinhamento direto com a Agenda 2030 da ONU.</td>
+    <td>Permite mensurar o <b>retorno social</b> de um contrato, não apenas o financeiro. Cada gasto público deve gerar valor mensurável para a sociedade.</td>
+  </tr>
+  <tr>
+    <th>🏛️ Defesa Técnica perante o TCE</th>
+    <th>🌐 Compromisso Internacional do Brasil</th>
+  </tr>
+  <tr>
+    <td>Demonstra que o investimento gera <b>valor público auditável</b> além da economia financeira. Argumento técnico defensável perante o TCE/RO.</td>
+    <td>Brasil assumiu publicamente cumprir os 17 ODS até <b>2030</b>. Cada gasto público deve contribuir — monitoramento por IBGE, IPEA e PNUD.</td>
+  </tr>
 </table>
-
-<br>
 
 ### 🎖️ Os 4 ODS atendidos pela contratação Norte & Sul
 
 <table>
-<tr>
-<td width="120" align="center" valign="top" bgcolor="#C5192D">
-
-### 🎓
-**ODS 04**
-
-</td>
-<td valign="top">
-
-#### Educação de Qualidade
-
-**Capacitação técnica obrigatória pela CCT 2025** (NRs, segurança do trabalho, reciclagem) — **~14.556 horas/ano** de treinamento gratuito aos 1.213 trabalhadores (12h por trabalhador/ano, conforme acordo coletivo).
-
-> *"Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos."* — ONU
-
-</td>
-</tr>
-<tr>
-<td width="120" align="center" valign="top" bgcolor="#FF3A21">
-
-### ⚖️
-**ODS 05**
-
-</td>
-<td valign="top">
-
-#### Igualdade de Gênero
-
-**Mesmo regime CLT e mesma tabela CCT para todos os trabalhadores** — neutralidade salarial total. Licença-maternidade, direito à amamentação, proteção contra discriminação no ambiente de trabalho.
-
-> *"Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas."* — ONU
-
-</td>
-</tr>
-<tr>
-<td width="120" align="center" valign="top" bgcolor="#A21942">
-
-### 💼
-**ODS 08**
-
-</td>
-<td valign="top">
-
-#### Trabalho Decente e Crescimento Econômico
-
-**1.213 empregos formais CLT** com carteira assinada, FGTS, INSS, férias, 13º e direito a aposentadoria. **R$ 21,3 milhões/ano** de folha injetada na economia regional dos 7 municípios.
-
-> *"Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todos."* — ONU
-
-</td>
-</tr>
-<tr>
-<td width="120" align="center" valign="top" bgcolor="#DD1367">
-
-### 🌐
-**ODS 10**
-
-</td>
-<td valign="top">
-
-#### Redução das Desigualdades
-
-**Capilaridade em municípios pequenos** onde o emprego formal é estruturalmente escasso: **Parecís (4.125 hab.)** e **Itapuã do Oeste (8.548 hab.)** têm hoje 0,82% e 0,35% da população empregada formalmente pela Norte & Sul.
-
-> *"Reduzir a desigualdade dentro dos países e entre eles."* — ONU
-
-</td>
-</tr>
+  <tr>
+    <td width="140" align="center" bgcolor="#C5192D"><h2>🎓<br><sub><b>ODS 04</b></sub></h2></td>
+    <td>
+      <b>Educação de Qualidade</b><br><br>
+      <b>Capacitação técnica obrigatória pela CCT 2025</b> (NRs, segurança do trabalho, reciclagem) — <b>~14.556 horas/ano</b> de treinamento gratuito aos 1.213 trabalhadores (12h por trabalhador/ano, conforme acordo coletivo).
+      <blockquote><i>"Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos."</i> — ONU</blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td width="140" align="center" bgcolor="#FF3A21"><h2>⚖️<br><sub><b>ODS 05</b></sub></h2></td>
+    <td>
+      <b>Igualdade de Gênero</b><br><br>
+      <b>Mesmo regime CLT e mesma tabela CCT para todos os trabalhadores</b> — neutralidade salarial total. Licença-maternidade, direito à amamentação, proteção contra discriminação no ambiente de trabalho.
+      <blockquote><i>"Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas."</i> — ONU</blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td width="140" align="center" bgcolor="#A21942"><h2>💼<br><sub><b>ODS 08</b></sub></h2></td>
+    <td>
+      <b>Trabalho Decente e Crescimento Econômico</b><br><br>
+      <b>1.213 empregos formais CLT</b> com carteira assinada, FGTS, INSS, férias, 13º e direito a aposentadoria. <b>R$ 21,3 milhões/ano</b> de folha injetada na economia regional dos 7 municípios.
+      <blockquote><i>"Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todos."</i> — ONU</blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td width="140" align="center" bgcolor="#DD1367"><h2>🌐<br><sub><b>ODS 10</b></sub></h2></td>
+    <td>
+      <b>Redução das Desigualdades</b><br><br>
+      <b>Capilaridade em municípios pequenos</b> onde o emprego formal é estruturalmente escasso: <b>Parecís (4.125 hab.)</b> e <b>Itapuã do Oeste (8.548 hab.)</b> têm hoje 0,82% e 0,35% da população empregada formalmente pela Norte & Sul.
+      <blockquote><i>"Reduzir a desigualdade dentro dos países e entre eles."</i> — ONU</blockquote>
+    </td>
+  </tr>
 </table>
 
 > [!TIP]
